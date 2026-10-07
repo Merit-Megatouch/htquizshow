@@ -1,0 +1,61 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+AppendLangExt(char (&) [255], LocaleMasks) | htquizshow.so
+Translator::nTranslate(char*, unsigned int, char const*) | htquizshow.so
+VideoClass::RemoveFromVBZ(unsigned long) | htquizshow.so
+VideoClass::DarkenVB(int, int, int, int, int, int, bool) | htquizshow.so
+WorldClass::CopyCompBitmap(Bitmap*, int, int, int, int, int, int, int, int, int, int, bool) | htquizshow.so
+WorldClass::SetBack(Bitmap*, int) | htquizshow.so
+WorldClass::SetBack(short) | htquizshow.so
+WorldClass::ShowAll() | htquizshow.so
+TriviaClass::GetQuesData(int, int) | htquizshow.so
+TriviaClass::GetRandomCat() | htquizshow.so
+TriviaClass::TriviaClass(xml_gamerandom::TrivPICRAND_record*, char*, unsigned char, unsigned char, unsigned char) | htquizshow.so
+TriviaClass::~TriviaClass() | htquizshow.so
+system_info::SystemInfo::GetInstance() | htquizshow.so
+system_info::SystemInfo::IsPlatformION() | htquizshow.so
+system_info::SystemInfo::IsPlatformGameTime() | htquizshow.so
+MegacGlobals::PopWorld() | htquizshow.so
+MegacGlobals::PushWorld(char const*, char const*, bool) | htquizshow.so
+xml_gamerandom::TrivPICRAND_record::AdjustTime(int, long) | htquizshow.so
+xml_gamerandom::TrivPICRAND_record::TrivPICRAND_record(xml_gamerandom::TrivPICRAND_record const&) | htquizshow.so
+xml_gamerandom::TrivPICRAND_record::TrivPICRAND_record() | htquizshow.so
+xml_gamerandom::TrivPICRAND_record::~TrivPICRAND_record() | htquizshow.so
+xml_gamerandom::TrivPICRAND_record::operator=(xml_gamerandom::TrivPICRAND_record const&) | htquizshow.so
+abstract_metadata::abstract_metadata(char const*, db_common_field_def const*, int, char const*, db_common_index_def const*, int, char const* const*, int, bool) | htquizshow.so
+abstract_xml_record::AdjustTimeFields(int, long) | htquizshow.so
+abstract_xml_record::abstract_xml_record(abstract_xml_record const&) | htquizshow.so
+abstract_xml_record::abstract_xml_record() | htquizshow.so
+abstract_xml_record::~abstract_xml_record() | htquizshow.so
+Bitmap::ConvertSmack(unsigned char) | htquizshow.so
+Bitmap::CopyFromScreen(int, int, bool) | htquizshow.so
+Bitmap::CreateColoredTextBoxTTF(char const*, int, int, int, int, int, int, int, int, int, bool, char*, int) | htquizshow.so
+Bitmap::CData(int) | htquizshow.so
+Bitmap::Clear() | htquizshow.so
+Bitmap::Compress(bool, int, unsigned short*) | htquizshow.so
+Bitmap::setCData(unsigned short*) | htquizshow.so
+Bitmap::DrawtoVBZ(int, int, int) | htquizshow.so
+Settings::Init() | htquizshow.so
+Settings::Load() | htquizshow.so
+Settings::Cleanup() | htquizshow.so
+Settings::Restore(abstract_xml_record const*) | htquizshow.so
+Settings::Settings(char const*, unsigned int) | htquizshow.so
+Settings::~Settings() | htquizshow.so
+TextUtils::ConvertToMarkup(char const*) | htquizshow.so
+TextUtils::MeritStringToUTF8(char const*) | htquizshow.so
+xml_gamerandom::TrivPICRAND_record::operator!=(xml_gamerandom::TrivPICRAND_record const&) const | htquizshow.so
+Settings::Key(unsigned int, bool) const | htquizshow.so
+typeinfo for abstract_record | htquizshow.so
+typeinfo for abstract_xml_record | htquizshow.so
+typeinfo for Settings | htquizshow.so
+typeinfo for xml_gamerandom::TrivPICRAND_record | htquizshow.so
+blit | htquizshow.so
+create_bitmap_ex | htquizshow.so
+destroy_bitmap | htquizshow.so
+set_burn_blender | htquizshow.so
+uisspace | htquizshow.so
+usetat | htquizshow.so
+usprintf | htquizshow.so
+uszprintf | htquizshow.so
