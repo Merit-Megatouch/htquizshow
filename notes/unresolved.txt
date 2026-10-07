@@ -4,7 +4,6 @@
 # symbol | needed by
 AppendLangExt(char (&) [255], LocaleMasks) | htquizshow.so
 VideoClass::DarkenVB(int, int, int, int, int, int, bool) | htquizshow.so
-uisspace | htquizshow.so
 usetat | htquizshow.so
 usprintf | htquizshow.so
 uszprintf | htquizshow.so
